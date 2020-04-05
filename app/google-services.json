@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "111774612405",
+    "firebase_url": "https://my-word-bank.firebaseio.com",
+    "project_id": "my-word-bank",
+    "storage_bucket": "my-word-bank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111774612405:android:c2ca9d7e4f88d8b65bb7fc",
+        "android_client_info": {
+          "package_name": "ae.ac.hct"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111774612405-dtojc018cofno3m5sj1iumdkcjh4a6fr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ae.ac.hct",
+            "certificate_hash": "0df7a9f5c2b91115f8686153e330ae42444ac275"
+          }
+        },
+        {
+          "client_id": "111774612405-2kue73e0tvndjvk5rm7t0neq6h380ldd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWyuhZ_If9FUziYU5RyVfi31Vw5MTzEIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111774612405-2kue73e0tvndjvk5rm7t0neq6h380ldd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
