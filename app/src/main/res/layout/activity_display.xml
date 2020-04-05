@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="38dp" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="33dp" >
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Search" />
+    </SearchView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="29dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/c1"
+            android:onClick="OnUpdateClick"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/c1"
+            android:onClick="OnAddClick"
+            app:srcCompat="@android:drawable/ic_menu_add" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="511dp"
+        android:fillViewport="false">
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/c1"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"></TableLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="OnBackClick"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+
+</LinearLayout>
