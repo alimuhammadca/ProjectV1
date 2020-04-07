@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import ae.ac.hct.model.UserDetails;
+
 public class add extends AppCompatActivity {
 
     @Override
@@ -13,8 +15,14 @@ public class add extends AppCompatActivity {
         setContentView(R.layout.activity_add);
     }
 
+    public void onSaveClick(View view) {
+        UserDetails user = UserDetails.instance();
+        String userId = user.getUserId();
+    }
+
     public void OnBackClick(View view)
     {
+
         finish();
     }
 }
