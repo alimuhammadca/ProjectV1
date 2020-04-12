@@ -15,6 +15,9 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.UserInfo;
+
+import ae.ac.hct.model.UserDetails;
 
 public class login extends AppCompatActivity {
 
@@ -45,8 +48,8 @@ public class login extends AppCompatActivity {
 
         progressBar.setVisibility(View.VISIBLE);
 
-        String email = etEmail.getText().toString();
-        String password = etPassword.getText().toString();
+        final String email = etEmail.getText().toString();
+        final String password = etPassword.getText().toString();
 
         auth.signInWithEmailAndPassword(email, password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
             @Override
@@ -54,6 +57,9 @@ public class login extends AppCompatActivity {
                 String message = "Sign In successful";
                 Toast.makeText(login.this, message, Toast.LENGTH_SHORT).show();
                 progressBar.setVisibility(View.INVISIBLE);
+
+                UserDetails user = UserDetails.instance();
+                user.setUserId(email);
 
                 Intent intent = new Intent(login.this, MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
